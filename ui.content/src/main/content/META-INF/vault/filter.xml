@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/bingosite" mode="merge"/>
+    <filter root="/content/bingosite" mode="merge"/>
+    <filter root="/content/dam/bingosite" mode="merge">
+        <exclude pattern="/content/dam/bingosite(/.*)?"/>
+        <include pattern="/content/dam/bingosite/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/bingosite/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/bingosite" mode="merge"/>
+</workspaceFilter>
