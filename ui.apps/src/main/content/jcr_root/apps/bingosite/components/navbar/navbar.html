@@ -1,0 +1,19 @@
+<div class="navbar">
+    <div class="navbar__logo">
+        <img src="${properties.logo}" alt="logo">
+    </div>
+
+    <sly data-sly-repeat.navbarOptions = "${resource.listChildren}">
+        <sly data-sly-repeat.option = "${navbarOptions.listChildren}">
+            <div class="navbar__links">
+                <a class="navbar__links__item" href="https://bingosnacks.com/bingo-comedy-adda.html">${option.navlink}</a>
+            </div>
+        </sly>
+    </sly>
+
+
+
+    <div class="navbar__icon">
+        <img class="navbar__icon__image" src="./assets/search.svg" alt="search icon">
+    </div>
+</div>
