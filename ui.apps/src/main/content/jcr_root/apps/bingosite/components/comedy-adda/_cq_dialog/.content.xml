@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Comedy Adda Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <flavors
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Flavors"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <comedyBgImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Comedy Adda BG Image"
+                                                    fieldLabel="Comedy Adda BG Image"
+                                                    name="./comedybgimage">
+                                            </comedyBgImage>
+                                            <comedyText1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Comedy Adda Text 1"
+                                                    fieldLabel="Comedy Adda Text 1"
+                                                    name="./comedytext1">
+                                            </comedyText1>
+                                            <comedyText2
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Comedy Adda Text 2"
+                                                    fieldLabel="Comedy Adda Text 2"
+                                                    name="./comedytext2">
+                                            </comedyText2>
+                                            <comedyVideoURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Comedy Adda Video URL"
+                                                    fieldLabel="Comedy Adda Video URL"
+                                                    name="./comedyvideourl">
+                                            </comedyVideoURL>
+                                            <comedyVideoThumbnail
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Comedy Adda Video Thumbnail"
+                                                    fieldLabel="Comedy Adda Video Thumbnail"
+                                                    name="./comedyvideothumbnail">
+                                            </comedyVideoThumbnail>
+                                            <comedycta
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Comedy Adda CTA Button Text"
+                                                    fieldLabel="Comedy Adda CTA Button Text"
+                                                    name="./comedycta">
+                                            </comedycta>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </flavors>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

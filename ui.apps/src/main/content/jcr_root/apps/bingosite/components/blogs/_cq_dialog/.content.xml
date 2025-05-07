@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Bingo Blogs Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <blogs
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Blogs"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 1"
+                                                    fieldLabel="Text 1"
+                                                    name="./text1">
+                                            </text1>
+                                            <text2
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 2"
+                                                    fieldLabel="Text 2"
+                                                    name="./text2">
+                                            </text2>
+                                            <text3
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 1"
+                                                    fieldLabel="Text 3"
+                                                    name="./text3">
+                                            </text3>
+                                            <blog
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./flavor">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <blogImage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Blog Image"
+                                                                fieldLabel="Blog Image"
+                                                                name="./blogimage"/>
+                                                        <blogDate
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                                fieldDescription="Blog Date"
+                                                                fieldLabel="Blog Date"
+                                                                name="./blogdate"/>
+                                                        <blogTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Blog Title"
+                                                            fieldLabel="Blog Title"
+                                                            name="./blogtitle"/>
+                                                        </items>
+                                                </field>
+                                            </blog>
+                                            <ctaButton
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="CTA Button Text"
+                                                    fieldLabel="CTA Button Text"
+                                                    name="./blogcta">
+                                            </ctaButton>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </blogs>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

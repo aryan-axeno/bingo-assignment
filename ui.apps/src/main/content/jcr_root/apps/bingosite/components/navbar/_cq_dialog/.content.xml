@@ -48,12 +48,19 @@
                                                         <navLink
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            fieldDescription="Navbar Links"
-                                                            fieldLabel="Navbar Links"
+                                                            fieldDescription="Navbar Items"
+                                                            fieldLabel="Navbar Items"
                                                             name="./navlink"/>
                                                     </items>
                                                 </field>
                                             </navbarOptions>
+                                            <logo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Search from DAM"
+                                                    fieldLabel="Search"
+                                                    name="./search">
+                                            </logo>
                                         </items>
                                     </column>
                                 </items>
