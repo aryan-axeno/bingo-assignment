@@ -34,21 +34,21 @@
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="TEXT 1"
                                                     fieldLabel="Text 1"
-                                                    name="./text1">
+                                                    name="./blogtext1">
                                             </text1>
                                             <text2
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="TEXT 2"
                                                     fieldLabel="Text 2"
-                                                    name="./text2">
+                                                    name="./blogtext2">
                                             </text2>
                                             <text3
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldDescription="TEXT 1"
+                                                    fieldDescription="TEXT 3"
                                                     fieldLabel="Text 3"
-                                                    name="./text3">
+                                                    name="./blogtext3">
                                             </text3>
                                             <blog
                                                 jcr:primaryType="nt:unstructured"
@@ -57,11 +57,12 @@
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                                    name="./flavor">
+                                                    name="./blog">
                                                     <items jcr:primaryType="nt:unstructured">
                                                         <blogImage
                                                                 jcr:primaryType="nt:unstructured"
                                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
                                                                 fieldDescription="Blog Image"
                                                                 fieldLabel="Blog Image"
                                                                 name="./blogimage"/>
@@ -77,16 +78,31 @@
                                                             fieldDescription="Blog Title"
                                                             fieldLabel="Blog Title"
                                                             name="./blogtitle"/>
+                                                        <blogRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Blog Redirect URL"
+                                                                fieldLabel="Blog Redirect URL"
+                                                                name="./blogredurl"/>
                                                         </items>
                                                 </field>
                                             </blog>
-                                            <ctaButton
+                                            <blogctaText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="CTA Button Text"
                                                     fieldLabel="CTA Button Text"
-                                                    name="./blogcta">
-                                            </ctaButton>
+                                                    name="./blogctatext">
+                                            </blogctaText>
+                                            <blogctaRedURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    rootPath="/content/dam/bingosite"
+                                                    fieldDescription="CTA Button URL"
+                                                    fieldLabel="CTA Button URL"
+                                                    name="./blogctaredurl">
+                                            </blogctaRedURL>
                                         </items>
                                     </column>
                                 </items>

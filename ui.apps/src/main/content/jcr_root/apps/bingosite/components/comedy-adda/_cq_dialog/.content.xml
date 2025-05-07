@@ -32,6 +32,7 @@
                                             <comedyBgImage
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="Comedy Adda BG Image"
                                                     fieldLabel="Comedy Adda BG Image"
                                                     name="./comedybgimage">
@@ -60,17 +61,25 @@
                                             <comedyVideoThumbnail
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="Comedy Adda Video Thumbnail"
                                                     fieldLabel="Comedy Adda Video Thumbnail"
                                                     name="./comedyvideothumbnail">
                                             </comedyVideoThumbnail>
-                                            <comedycta
+                                            <comedyctaText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="Comedy Adda CTA Button Text"
                                                     fieldLabel="Comedy Adda CTA Button Text"
-                                                    name="./comedycta">
-                                            </comedycta>
+                                                    name="./comedyctatext">
+                                            </comedyctaText>
+                                            <comedyctaRedURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Comedy Adda CTA Button URL"
+                                                    fieldLabel="Comedy Adda CTA Button URL"
+                                                    name="./comedyctaredurl">
+                                            </comedyctaRedURL>
                                         </items>
                                     </column>
                                 </items>

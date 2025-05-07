@@ -34,21 +34,21 @@
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="TEXT 1"
                                                     fieldLabel="Text 1"
-                                                    name="./text1">
+                                                    name="./producttext1">
                                             </text1>
                                             <text2
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="Text 2"
                                                     fieldLabel="Text 2"
-                                                    name="./text2">
+                                                    name="./producttext2">
                                             </text2>
                                             <text3
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldDescription="Text 3"
                                                     fieldLabel="Text 3"
-                                                    name="./text3">
+                                                    name="./producttext2">
                                             </text3>
                                             <product
                                                 jcr:primaryType="nt:unstructured"
