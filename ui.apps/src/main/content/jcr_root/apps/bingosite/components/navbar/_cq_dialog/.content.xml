@@ -32,6 +32,7 @@
                                             <logo
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="Logo path from DAM"
                                                     fieldLabel="Logo"
                                                     name="./logo">
@@ -39,28 +40,37 @@
                                             <navbarOptions
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                fieldDescription="Navbar Options"
+                                                fieldLabel="Navbar Options"
                                                 composite="{Boolean}true">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container"
                                                     name="./navbarOptions">
                                                     <items jcr:primaryType="nt:unstructured">
-                                                        <navLink
+                                                        <navItemsText
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            fieldDescription="Navbar Items"
-                                                            fieldLabel="Navbar Items"
-                                                            name="./navlink"/>
+                                                            fieldDescription="Navbar Item Text"
+                                                            fieldLabel="Navbar Item Text"
+                                                            name="./navitemtext"/>
+                                                        <navItemsRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Navbar Item Redirect URL"
+                                                                fieldLabel="Navbar Item Redirect URL"
+                                                                name="./navitemredurl"/>
                                                     </items>
                                                 </field>
                                             </navbarOptions>
-                                            <logo
+                                            <searchLogo
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="Search from DAM"
                                                     fieldLabel="Search"
                                                     name="./search">
-                                            </logo>
+                                            </searchLogo>
                                         </items>
                                     </column>
                                 </items>

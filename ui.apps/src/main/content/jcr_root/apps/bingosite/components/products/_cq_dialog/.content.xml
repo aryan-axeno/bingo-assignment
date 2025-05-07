@@ -53,6 +53,8 @@
                                             <product
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                fieldDescription="Add Products"
+                                                fieldLabel="Products"
                                                 composite="{Boolean}true">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"

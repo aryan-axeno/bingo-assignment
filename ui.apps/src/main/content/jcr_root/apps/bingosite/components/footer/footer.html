@@ -1,7 +1,7 @@
 <img src="${properties.itclogo}">
 <img src="${properties.license}">
-<sly data-sly-repeat.footerOptions = "${resource.listChildren}">
-    <sly data-sly-repeat.option = "${footerOptions.listChildren}">
+<sly data-sly-list.footerOptions = "${resource.listChildren}">
+    <sly data-sly-list.option = "${footerOptions.listChildren}">
         ${option.footlink}
     </sly>
 </sly>
