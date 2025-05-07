@@ -2,14 +2,13 @@
     <div class="navbar__logo">
         <img src="${properties.logo}" alt="logo">
     </div>
-
+<div class="navbar__links">
     <sly data-sly-repeat.navbarOptions = "${resource.listChildren}">
         <sly data-sly-repeat.option = "${navbarOptions.listChildren}">
-            <div class="navbar__links">
                 <a class="navbar__links__item" href="https://bingosnacks.com/bingo-comedy-adda.html">${option.navlink}</a>
-            </div>
         </sly>
     </sly>
+</div>
 
 
 

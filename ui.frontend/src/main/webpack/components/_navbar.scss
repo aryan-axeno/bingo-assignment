@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0.5rem auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: $bg-color-black;
+
+    &__links{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        gap: 2.2rem;
+        
+        &__item{
+            color: $white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    }
+    &__icon{
+        &__image{
+            height: 1.5rem;
+        }
+    }
+}
