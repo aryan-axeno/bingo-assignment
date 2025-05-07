@@ -1,0 +1,17 @@
+Text1: ${properties.smptext1} <br>
+Text2: ${properties.smptext2} <br>
+Text3: ${properties.smptext3} <br>
+
+Bingo Img: ${properties.bingologosmp} <br>
+SMP Name: ${properties.smpname} <br>
+
+<sly data-sly-list.smps = "${resource.listChildren}">
+    <sly data-sly-list.smp = "${smps.listChildren}">
+        Logo: ${smp.smplogo} <br>
+        Title: ${smp.smptitle} <br>
+        Caption: ${smp.smpcaption} <br>
+        Image: ${smp.smpimage} <br>
+        Redirect Text: ${smp.smpredtext} <br>
+        Redirect URL: ${smp.smpredurl} <br>
+    </sly>
+</sly>

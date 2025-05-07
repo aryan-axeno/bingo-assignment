@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Social Media Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <socialMediaPosts
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Social Media Posts"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 1"
+                                                    fieldLabel="Text 1"
+                                                    name="./smptext1">
+                                            </text1>
+                                            <text2
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 2"
+                                                    fieldLabel="Text 2"
+                                                    name="./smptext2">
+                                            </text2>
+                                            <text3
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="TEXT 1"
+                                                    fieldLabel="Text 3"
+                                                    name="./smptext3">
+                                            </text3>
+                                            <bingoLogo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
+                                                    fieldDescription="Bingo Logo"
+                                                    fieldLabel="Bingo Logo"
+                                                    name="./bingologosmp">
+                                            </bingoLogo>
+                                            <smpName
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Social Media Post Name"
+                                                    fieldLabel="Social Media Post Name"
+                                                    name="./smpname">
+                                            </smpName>
+                                            <socialMediaPost
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./smp">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <smpLogo
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
+                                                                fieldDescription="Social Media Logo"
+                                                                fieldLabel="Social Media Logo"
+                                                                name="./smplogo"/>
+                                                        <smpTitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Social Media Title"
+                                                                fieldLabel="Social Media Title"
+                                                                name="./smptitle"/>
+                                                        <smpCaption
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Blog Title"
+                                                            fieldLabel="Social Media Caption"
+                                                            name="./smpcaption"/>
+                                                        <smpImage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
+                                                                fieldDescription="Social Media Image"
+                                                                fieldLabel="Social Media Image"
+                                                                name="./smpimage"/>
+                                                        <smpRedirectText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Social Media Redirect Text"
+                                                                fieldLabel="Social Media Redirect Text"
+                                                                name="./smpredtext"/>
+                                                        <smpRedirectURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Social Media Redirect URL"
+                                                                fieldLabel="Social Media Redirect URL"
+                                                                name="./smpredurl"/>
+                                                        </items>
+                                                </field>
+                                            </socialMediaPost>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </socialMediaPosts>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

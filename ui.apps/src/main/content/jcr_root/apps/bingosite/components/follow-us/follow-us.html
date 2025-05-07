@@ -1,0 +1,8 @@
+Follow us text: ${properties.followtext} <br>
+
+<sly data-sly-list.socialMedias = "${resource.listChildren}">
+    <sly data-sly-list.socialMedia = "${socialMedias.listChildren}">
+        Img: ${socialMedia.socialmediaimage} <br>
+        URL: ${socialMedia.socialmediaredurl} <br>
+    </sly>
+</sly>
