@@ -1,0 +1,16 @@
+<div class="flavours">
+
+    <sly data-sly-list.flavors = "${resource.listChildren}">
+        <sly data-sly-list.flavor = "${flavors.listChildren}">
+            <img class="flavours__image true?display:none" src="${flavor.flavorimage}" alt="">
+            <div class="flavours__card">
+                <div class="flavours__card--heading">${flavor.flavortext1}</div>
+                <div class="flavours__card--subheading">${flavor.flavortext2}</div>
+                <div class="flavours__card--description">${flavor.flavortext3}</div>
+
+                <button class="cta">${flavor.flavorcta}</button>
+            </div>
+        </sly>
+    </sly>
+
+</div>

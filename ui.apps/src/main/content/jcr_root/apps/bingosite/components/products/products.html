@@ -1,0 +1,26 @@
+<div class="gallery">
+    <div class="gallery__top">
+        <div class="gallery__top--heading">
+            <h1>
+                ${properties.text1}
+            </h1>
+        </div>
+        <div class="gallery__top--subheading">
+            <h2>${properties.text2}</h2>
+        </div>
+        <div class="gallery__top--description">
+            <P>${properties.text3}</P>
+        </div>
+
+    </div>
+    <div class="gallery__bottom">
+        <div class="gallery__bottom__card">
+            <sly data-sly-list.products = "${resource.listChildren}">
+                <sly data-sly-list.product = "${products.listChildren}">
+                    <img src="${product.prodimage}" class="gallery__bottom__card--image" alt="chilli charged chips">
+                    <a class="gallery__bottom__card--description" href="${product.prodredurl}">${product.prodtext}</a>
+                </sly>
+            </sly>
+        </div>
+    </div>
+</div>
