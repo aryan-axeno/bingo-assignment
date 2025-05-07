@@ -32,6 +32,8 @@
                                             <flavor
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                fieldDescription="Add Flavors"
+                                                fieldLabel="Flavors"
                                                 composite="{Boolean}true">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
@@ -41,12 +43,14 @@
                                                         <flavorBgImage
                                                                 jcr:primaryType="nt:unstructured"
                                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
                                                                 fieldDescription="Flavor BG Image"
                                                                 fieldLabel="Flavor BG Image"
                                                                 name="./flavorbgimage"/>
                                                         <flavorImage
                                                                 jcr:primaryType="nt:unstructured"
                                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
                                                                 fieldDescription="Flavor Image"
                                                                 fieldLabel="Flavor Image"
                                                                 name="./flavorimage"/>
@@ -68,12 +72,18 @@
                                                                 fieldDescription="Flavor Text 3"
                                                                 fieldLabel="Flavor Text 3"
                                                                 name="./flavortext3"/>
-                                                        <flavorcta
+                                                        <flavorctaText
                                                                 jcr:primaryType="nt:unstructured"
                                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                                 fieldDescription="CTA Button Text"
                                                                 fieldLabel="CTA Button Text"
-                                                                name="./flavorcta"/>
+                                                                name="./flavorctatext"/>
+                                                        <flavorctaRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="CTA Button Redirect URL"
+                                                                fieldLabel="CTA Button Redirect URL"
+                                                                name="./flavorctaredurl"/>
                                                     </items>
                                                 </field>
                                             </flavor>

@@ -32,6 +32,7 @@
                                             <itclogo
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="ITC logo from DAM"
                                                     fieldLabel="ITC Logo"
                                                     name="./itclogo">
@@ -39,28 +40,92 @@
                                             <fssailicense
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/bingosite"
                                                     fieldDescription="FSSAI License image path from DAM"
                                                     fieldLabel="FSSAI License"
                                                     name="./license">
                                             </fssailicense>
-                                            <footerOptions
+                                            <upperFooter
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                fieldDescription="Upper Footer Options"
+                                                fieldLabel="Upper Footer Options"
                                                 composite="{Boolean}true">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                                    name="./navbarOptions">
+                                                    name="./upperfooter">
                                                     <items jcr:primaryType="nt:unstructured">
-                                                        <footLink
+                                                        <upperFooterText
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            fieldDescription="Footer Links"
-                                                            fieldLabel="Footer Links"
-                                                            name="./footlink"/>
+                                                            fieldDescription="Upper Footer Text"
+                                                            fieldLabel="Upper Footer Text"
+                                                            name="./upperfootertext"/>
+                                                        <upperFooterRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Upper Footer Redirect URL"
+                                                                fieldLabel="Upper Footer Redirect URL"
+                                                                name="./upperfooterredurl"/>
                                                     </items>
                                                 </field>
-                                            </footerOptions>
+                                            </upperFooter>
+
+                                            <lowerFooter
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldDescription="Lower Footer Options"
+                                                    fieldLabel="Lower Footer Options"
+                                                    composite="{Boolean}true">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./lowerfooter">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <lowerFooterText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Lower Footer Text"
+                                                                fieldLabel="Lower Footer Text"
+                                                                name="./lowerfootertext"/>
+                                                        <lowerFooterRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Lower Footer Redirect URL"
+                                                                fieldLabel="Lower Footer Redirect URL"
+                                                                name="./lowerfooterredurl"/>
+                                                    </items>
+                                                </field>
+                                            </lowerFooter>
+
+                                            <lowerFooterSocialMedia
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldDescription="Lower Footer Social Media Options"
+                                                    fieldLabel="Lower Footer Social Media Options"
+                                                    composite="{Boolean}true">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./lowerfootersm">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <lowerFooterSMlogo
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                rootPath="/content/dam/bingosite"
+                                                                fieldDescription="Lower Footer Social Media Logo"
+                                                                fieldLabel="Lower Footer Social Media Logo"
+                                                                name="./lowerfootersmlogo"/>
+                                                        <upperFooterRedURL
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Lower Footer Social Media Redirect URL"
+                                                                fieldLabel="Lower Footer Social MediaRedirect URL"
+                                                                name="./lowerfootsmredurl"/>
+                                                    </items>
+                                                </field>
+                                            </lowerFooterSocialMedia>
                                         </items>
                                     </column>
                                 </items>
